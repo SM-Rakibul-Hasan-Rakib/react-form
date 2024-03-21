@@ -1,10 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
-import SimpleForm from './Components/SimpleForm/SimpleForm'
-import StatefullForm from './Components/StatfullForm/StatefullForm'
-import RefForm from './Components/RefForm/RefForm';
+// import SimpleForm from './Components/SimpleForm/SimpleForm'
+// import StatefullForm from './Components/StatfullForm/StatefullForm'
+// import RefForm from './Components/RefForm/RefForm';
+
+import HookForm from "./Components/HookForm/HookForm"
 
 
 
@@ -15,10 +17,11 @@ function App() {
     <>
       
       <h1>Vite + React</h1>
+      <HookForm></HookForm>
    {/* <SimpleForm></SimpleForm> */}
    {/* <StatefullForm></StatefullForm> */}
    {/* <RefForm></RefForm> */}
-   <RefForm></RefForm>
+   {/* <RefForm></RefForm> */}
     </>
   )
 }
