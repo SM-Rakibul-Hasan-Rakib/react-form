@@ -1,16 +1,29 @@
-const RefForm = () => {
+import { useEffect, useRef } from "react";
 
-  const handleSubmit = e =>{
+const RefForm = () => {
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+
+
+  useEffect( () => {
+    nameRef.current.focus()
+  }, []);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-  }
+    console.log(nameRef.current.value);
+    console.log(emailRef.current.value);
+    console.log(passwordRef.current.value);
+  };
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="name" />
+        <input ref={nameRef} type="text" name="name" />
         <br />
-        <input type="text" name="email" />
+        <input ref={emailRef} defaultValue={'devrakibulhasan@gmail.com'} type="text" name="email" />
         <br />
-        <input type="text" name="phone" />
+        <input ref={passwordRef} type="password" name="password" />
         <br />
         <button>Submit</button>
       </form>

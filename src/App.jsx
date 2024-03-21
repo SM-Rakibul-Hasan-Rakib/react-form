@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import SimpleForm from './Components/SimpleForm/SimpleForm'
 import StatefullForm from './Components/StatfullForm/StatefullForm'
-import RefForm from './Components/RefForm/RefForm'
+import RefForm from './Components/RefForm/RefForm';
 
 
 
